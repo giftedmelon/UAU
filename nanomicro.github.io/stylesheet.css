@@ -1,0 +1,18 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    background-color: #4c43ff;
+    height: 100px;
+}
+
+.main {
+    background-color: #625afc;
+    height: 100px;
+}
+
+.footer {
+    background-attachment: fixed;
+    
+}

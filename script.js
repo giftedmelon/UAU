@@ -84,13 +84,13 @@ function submitForm() {
   
     if (switchInput.checked) {
       // Switching to Edit Mode
-      modeText.innerText = "編輯モード　オン";
+      modeText.innerText = "編集モード　オン";
       helloContent.style.display = "none";
       byeContent.style.display = "block";
       commentForm.style.display = "block";
     } else {
       // Switching to Common Mode
-      modeText.innerText = "編輯モード";
+      modeText.innerText = "編集モード";
       helloContent.style.display = "block";
       byeContent.style.display = "none";
       commentForm.style.display = "none";
