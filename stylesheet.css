@@ -1,12 +1,14 @@
-//試しにcss作ってみた//
+/* 試しにcss作ってみた */
 
-@charset "UTF-8"
+@charset "UTF-8";
 
 body {
 	font-family: "verdana";
 }
 
-.header {
+
+header {
 	background-color: #f7f2b4;
 	height: 90px;
 }
+
