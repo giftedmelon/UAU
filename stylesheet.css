@@ -12,3 +12,68 @@ header {
 	height: 90px;
 }
 
+.lang-switch {
+	display: flex;
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	padding: .4rem;
+	background-color: var(--subColor);
+	z-index: 2;
+}
+
+.lang-switch a {
+	display: block;
+	flex-grow: 1;
+	padding: .2rem, .7rem;
+	color: #fff;
+	font-weight: 700;
+	text-align: center;
+	line-height: 1.4;
+}
+
+.lang-switch a:first-child {
+	border-right: 1px solid #fff;
+}
+
+.sp-none {
+	display: none !important
+}
+
+.top-catch {
+	width: 100%;
+}
+
+.slideshow-container {
+	position: relative;
+	max-width: 100%;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+.slide {
+	display: none;
+}
+
+/*img {
+	width: 100%;
+	height: auto;
+}*/
+
+.dots-container {
+	position: absolute;
+	bottom: 7px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.dot {
+	height: 7px;
+	width: 7px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 4px;
+	cursor: pointer;
+}
