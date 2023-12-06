@@ -27,7 +27,7 @@ function submitForm() {
     formData.append("comment", comment);
   
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://script.google.com/macros/s/AKfycbySwILxCO99CPbKA0XW0Adkb7f00xq-_4xbnbN2UkfVqVRhp51SmerhmvlaQ2AshzY/exec", true); 
+    xhr.open("POST", "https://script.google.com/macros/s/AKfycbygLOAslc6EapkwoINOiVH_ZG9CbpbqgGp88EwKMUU2jcH6nF4FiILvmlz0J_YooHsV/exec", true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
           if (xhr.status === 200) {
