@@ -28,12 +28,17 @@ function submitForm() {
   
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "https://script.google.com/macros/s/AKfycbySwILxCO99CPbKA0XW0Adkb7f00xq-_4xbnbN2UkfVqVRhp51SmerhmvlaQ2AshzY/exec", true); 
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState == 4 && xhr.status == 200) {
-        alert("Comment submitted successfully!");
-        document.getElementById("commentForm").reset();
-      }
-    };
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            alert("Comment submitted successfully!");
+            document.getElementById("commentForm").reset();
+          } else {
+            console.error("Error: Unable to submit comment", xhr.responseText);
+          }
+        }
+      };
   
     xhr.send(formData);
   }
+  
