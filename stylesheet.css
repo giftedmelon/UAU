@@ -4,12 +4,13 @@
 
 body {
 	font-family: "verdana";
+	
 }
 
 
 header {
 	background-color: #f7f2b4;
-	height: 100px;
+	height: 110px;
 }
 
 #myName {
@@ -20,22 +21,40 @@ header {
 
 .lang-switch {
 	display: flex;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	position: absolute;
 	top: 2rem;
 	right: 2rem;
 	padding: .4rem;
 	background-color: var(--subColor);
 	z-index: 2;
-}
+} 
+  .lang-switch a {
+	margin-right: 5px; 
+	padding: 8px 12px; 
+	text-decoration: none;
+	color: #333;
+	background-color: #f7f2b4; 
+	border-radius: 5px; 
+  }
+  
+  .lang-switch a:hover {
+	background-color:#f7f2b4; 
+  }
 
 .slideshow-container {
 	max-width: 50%;
-	position: relative;
+	position:relative;
 	margin: auto;
   }
   
   .mySlides {
-	display: none;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    height: 200px;
   }
   
   /*.fade {
