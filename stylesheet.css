@@ -55,6 +55,7 @@ footer{
   
   .mySlides {
     display: none;
+	height: 280px;
   }
   
   /*.fade {
