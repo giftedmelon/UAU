@@ -13,6 +13,11 @@ header {
 	height: 110px;
 }
 
+footer{
+	background-color: #f7f2b4;
+	height: 20px;
+}
+
 #myName {
 	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 2rem;
