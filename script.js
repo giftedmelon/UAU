@@ -27,7 +27,7 @@ function submitForm() {
     formData.append("comment", comment);
   
     var xhr = new XMLHttpRequest();
-    xhr.open("AKfycbySwILxCO99CPbKA0XW0Adkb7f00xq-_4xbnbN2UkfVqVRhp51SmerhmvlaQ2AshzY", "https://script.google.com/macros/s/AKfycbySwILxCO99CPbKA0XW0Adkb7f00xq-_4xbnbN2UkfVqVRhp51SmerhmvlaQ2AshzY/exec", true); // Replace with your Google Apps Script URL
+    xhr.open("POST", "https://script.google.com/macros/s/AKfycbySwILxCO99CPbKA0XW0Adkb7f00xq-_4xbnbN2UkfVqVRhp51SmerhmvlaQ2AshzY/exec", true); 
     xhr.onreadystatechange = function() {
       if (xhr.readyState == 4 && xhr.status == 200) {
         alert("Comment submitted successfully!");
