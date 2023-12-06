@@ -14,3 +14,26 @@ function showSlides() {
 }
 
 document.addEventListener("DOMContentLoaded", showSlides);
+
+function submitForm() {
+    var comment = document.getElementById("comment").value;
+  
+    if (comment.trim() === "") {
+      alert("Please enter a comment.");
+      return;
+    }
+  
+    var formData = new FormData();
+    formData.append("comment", comment);
+  
+    var xhr = new XMLHttpRequest();
+    xhr.open("AKfycbySwILxCO99CPbKA0XW0Adkb7f00xq-_4xbnbN2UkfVqVRhp51SmerhmvlaQ2AshzY", "https://script.google.com/macros/s/AKfycbySwILxCO99CPbKA0XW0Adkb7f00xq-_4xbnbN2UkfVqVRhp51SmerhmvlaQ2AshzY/exec", true); // Replace with your Google Apps Script URL
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        alert("Comment submitted successfully!");
+        document.getElementById("commentForm").reset();
+      }
+    };
+  
+    xhr.send(formData);
+  }
