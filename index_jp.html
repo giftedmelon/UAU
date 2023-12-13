@@ -14,10 +14,7 @@
         </label>
         <span id="modeText">編集モード</span>
     </div>
-    <div class="content" id="content">
-        <p id="helloContent"></p>
-        <p id="byeContent" style="display: none;">こんにちは！</p>
-    </div>
+    
     <div class="lang-switch sp-none">
         <a href="index.html">English</a>
         <a href="index_jp.html">日本語</a>
@@ -67,7 +64,18 @@
 
         <p>を開発中...</p>
 
-        <div class="comment-form">
+        <div class="content" id="content">
+            <p id="helloContent"></p>
+            <p id="byeContent" style="display: none;">こんにちは！</p>
+            <form id="commentForm"　style="display: none;">
+                <label for="comment">君のコメ:</label>
+                <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+            
+                <input type="button" value="Submit Comment" onclick="submitForm()">
+            </form>
+        </div>
+
+        <!--<div class="comment-form">
             <h2>コメント欄</h2>
             <form id="commentForm">
               <label for="comment">君のコメ:</label>
@@ -75,7 +83,7 @@
           
               <input type="button" value="飛ばす" onclick="submitForm()">
             </form>
-          </div>
+          </div> -->
 
         <footer>&copy; PBC 2023</footer>
 </body>
