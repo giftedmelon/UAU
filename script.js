@@ -48,7 +48,7 @@ function submitForm() {
     var commentForm = document.getElementById("commentForm");
     commentForm.style.display = "none";
   })
-  
+
   function toggleContent() {
     var content = document.getElementById("content");
     var helloContent = document.getElementById("helloContent");
@@ -67,6 +67,30 @@ function submitForm() {
     } else {
       // Switching to Common Mode
       modeText.innerText = "Edit Mode";
+      helloContent.style.display = "block";
+      byeContent.style.display = "none";
+      commentForm.style.display = "none";
+    }
+  }
+
+  function toggleContentJ() {
+    var content = document.getElementById("content");
+    var helloContent = document.getElementById("helloContent");
+    var byeContent = document.getElementById("byeContent");
+    var switchInput = document.querySelector('.toggle-switch input');
+    var modeText = document.getElementById("modeText");
+    var commentForm = document.getElementById("commentForm");
+
+  
+    if (switchInput.checked) {
+      // Switching to Edit Mode
+      modeText.innerText = "編輯モード　オン";
+      helloContent.style.display = "none";
+      byeContent.style.display = "block";
+      commentForm.style.display = "block";
+    } else {
+      // Switching to Common Mode
+      modeText.innerText = "編輯モード";
       helloContent.style.display = "block";
       byeContent.style.display = "none";
       commentForm.style.display = "none";
