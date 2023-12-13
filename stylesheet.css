@@ -223,3 +223,16 @@ input:checked + .slider:before {
 	border-radius: 50%;
   }
 
+  #modeText {
+	margin: 10px; /* Adjust the margin as needed */
+  }
+  
+  .toggle-switch {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+  }
+
+  .content {
+	margin-top: 20px;
+  }

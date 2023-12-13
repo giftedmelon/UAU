@@ -41,4 +41,23 @@ function submitForm() {
   
     xhr.send(formData);
   }
+
+  function toggleContent() {
+    var content = document.getElementById("content");
+    var helloContent = document.getElementById("helloContent");
+    var byeContent = document.getElementById("byeContent");
+    var switchInput = document.querySelector('.toggle-switch input');
+    var modeText = document.getElementById("modeText");
   
+    if (switchInput.checked) {
+      // Switching to Edit Mode
+      modeText.innerText = "Edit Mode ON";
+      helloContent.style.display = "none";
+      byeContent.style.display = "block";
+    } else {
+      // Switching to View Mode
+      modeText.innerText = "Edit Mode";
+      helloContent.style.display = "block";
+      byeContent.style.display = "none";
+    }
+  }
