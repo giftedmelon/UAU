@@ -237,6 +237,7 @@ input:checked + .slider:before {
 	margin-top: 20px;
   }
 
+    /* Top
   .container{
 	width: 100%;
 	height: 100vh;
@@ -288,3 +289,6 @@ input:checked + .slider:before {
 	top: 50%;
 	opacity: 1;
   }
+ */
+
+ 
