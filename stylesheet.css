@@ -242,13 +242,8 @@ input:checked + .slider:before {
 	width: 100px;
 	height: 100px;
 	bottom: 0;
-	right: 0;
-  }
-
-  .floating-container:hover {
-	position:fixed;
-	height: 47%;
-	width: 6%;
+	right: -40px;
+	top: 50%;
   }
 
   .floating-container:hover .floating-button {
@@ -256,14 +251,10 @@ input:checked + .slider:before {
   }
 
   .floating-button {
-	position: fixed;
 	width: 50px;
 	height: 50px;
 	background: #2cb3f0;
 	border-radius: 50%;
-	right: 20px; /* Adjust the right offset as needed */
-	top: 50%; /* Position the button at the vertical center of the page */
-	transform: translateY(-50%);
 	color: white;
 	line-height: 50px;
 	text-align: center;

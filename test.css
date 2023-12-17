@@ -238,7 +238,7 @@ input:checked + .slider:before {
   }
 
   .floating-container {
-	/* position: fixed; */
+	position: fixed;
 	width: 100px;
 	height: 100px;
 	bottom: 0;
@@ -246,7 +246,7 @@ input:checked + .slider:before {
   }
 
   .floating-container:hover {
-	/* position:fixed; */
+	position:fixed; 
 	height: 47%;
 	width: 6%;
   }
