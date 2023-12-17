@@ -3,11 +3,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device, initial-scale= 1.0">
     <title>UAU</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <script src="scriptf.js"></script>
 </head>
 <body>
-    <div class="toggle-switch" id="toggleSwitch" onclick="toggleContentJ()">
+    <div class="toggle-switch" id="toggleSwitch" onclick="fabContentJ()">
         <label class="switch">
           <input type="checkbox">
           <span class="slider round"></span>
@@ -21,10 +21,10 @@
     </div>    
         <header>
         <h1><span id="myName">ゆうあうの家</span></h1>
-        <a href="https://github.com/giftedmelon/UAU" target="_blank">
+        <a class="link-disabled" href="https://github.com/giftedmelon/UAU" target="_blank">
             <img src="ibu32.png">
         </a>
-        <a href="https://www.total.titech.ac.jp/2023-10-2023pbc-orientation/" target="_blank"> PBCへ</a>
+        <a class="link-disabled" href="https://www.total.titech.ac.jp/2023-10-2023pbc-orientation/" target="_blank"> PBCへ</a>
         </header>
         <div class="slideshow-container">
             <div class="mySlides fade">
@@ -64,15 +64,25 @@
 
         <p>を開発中...</p>
 
-        <div class="content" id="content">
-            <p id="helloContent"></p>
-            <p id="byeContent" style="display: none;">こんにちは！</p>
-            <form id="commentForm"　style="display: none;">
-                <label for="comment">君のコメ:</label>
+        <div id="floating-window" style="display: none;">
+            <button id="comment-button">Comment</button>
+            <button id="highlight-button">Highlight</button>
+        </div>
+
+        <div id="comment-modal" class="modal">
+            <div class="modal-content">
+              <span onclick="closeCommentModal()" style="cursor: pointer; float: right;">&times;</span>
+              <p>Select options:</p>
+              <label><input type="checkbox" name="option1"> Option 1</label>
+              <label><input type="checkbox" name="option2"> Option 2</label>
+              <label><input type="checkbox" name="option3"> Option 3</label>
+              <form id="comment-form"　style="display: none;">
+                <label for="comment">Your Comment:</label>
                 <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
             
                 <input type="button" value="Submit Comment" onclick="submitForm()">
             </form>
+            </div>
         </div>
 
         <!--<div class="comment-form">
