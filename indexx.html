@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>U Page</title>
+  <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="pikachu1.png" alt="Your Photo">
+      <h1><span id="myName">Hello, I'm giftedmelon</span></h1>
+    </header>
+
+    <section class="about-me">
+      <h2>About Me</h2>
+      <p>Welcome to my personal webpage!</p>
+      <!-- Add more details about yourself here -->
+    </section>
+
+    <section class="passion">
+      <h2>Passion</h2>
+      <p>I am passionate about...</p>
+      <!-- Add your passions and interests here -->
+    </section>
+
+    <section class="language-switch">
+      <button onclick="changeLanguage('en')">EN</button>
+      <button onclick="changeLanguage('zh')">中</button>
+      <button onclick="changeLanguage('ja')">日</button>
+    </section>
+
+    <input type="text" id="userInput" placeholder="say some thing">
+    <button onclick="loadRandomWebsite()">Go</button>
+    <div id="result"></div>
+    <div id="error"></div>
+
+    <iframe id="websiteFrame" style="display: none; width: 100%; height: 500px;"></iframe>
+  </div>
+
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+  <script src="scriptt.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+</body>
+</html>
