@@ -32,7 +32,7 @@ fetch("https://script.google.com/macros/s/AKfycbwxbliucJ8oT3c3z8H-RaUVxH2pAMBkI8
     let id = data[0];
     let topic = data[1];
     let content = data[2];
-    arr.push(topic,content)
+    arr.push(topic + ": " + content)
   })
 })
 
