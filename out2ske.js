@@ -1,40 +1,52 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const svgContainer = document.getElementById('svgContainer');
-  
-    function addSVGToContainer(folder, svgFileName) {
+  const svgContainer = document.getElementById('svgContainer');
+
+  async function addSVGRowToContainer(svgFileNames) {
+    const svgRow = document.createElement('div');
+    svgRow.classList.add('svg-row');
+
+    for (const { folder, fileName } of svgFileNames) {
       const svgObject = document.createElement('object');
-      svgObject.data = `${folder}/${svgFileName}`;
+      const response = await fetch(`${folder}/${fileName}`);
+      const svgContent = await response.text();
+
       svgObject.type = 'image/svg+xml';
       svgObject.width = 200; // Set the width as needed
       svgObject.height = 200; // Set the height as needed
       svgObject.style.marginRight = '10px'; // Set the right margin to 10 pixels
-  
-      svgContainer.appendChild(svgObject);
+      svgObject.data = `data:image/svg+xml,${encodeURIComponent(svgContent)}`;
+
+      svgRow.appendChild(svgObject);
     }
-  
-    // Replace 'svg50.csv' with the path to your CSV file
-    const csvFilePath = 'test/testing_data/test_fold_1.csv';
-  
-    // Fetch the CSV file
-    fetch(csvFilePath)
-      .then(response => response.text())
-      .then(csvData => {
-        // Parse the CSV data using PapaParse
-        Papa.parse(csvData, {
-          header: true, // Assumes the first row contains headers
-          complete: function (result) {
-            // Iterate over the rows and get the SVG file names from the "File name" column
-            result.data.forEach(row => {
-              const svgFileName = row['File Name']; // Replace 'File name' with the actual column name
-              // console.log(svgFileName)
-              addSVGToContainer('test/outline_50', svgFileName);
-              addSVGToContainer('test/skeleton_50', svgFileName);
-              addSVGToContainer('test/test_result_1', svgFileName);
-            });
+
+    svgContainer.appendChild(svgRow);
+  }
+
+  // Replace 'svg50.csv' with the path to your CSV file
+  const csvFilePath = 'test/testing_data/test_fold_2.csv';
+
+  // Fetch the CSV file
+  fetch(csvFilePath)
+    .then(response => response.text())
+    .then(csvData => {
+      // Parse the CSV data using PapaParse
+      Papa.parse(csvData, {
+        header: true, // Assumes the first row contains headers
+        complete: async function (result) {
+          for (const row of result.data) {
+            const svgFileNames = [
+              { folder: 'test/outline_50', fileName: row['File Name'] },
+              { folder: 'test/skeleton_50', fileName: row['File Name'] },
+              { folder: 'test/test_result_2', fileName: row['File Name'] }
+            ];
+
+            await addSVGRowToContainer(svgFileNames);
           }
-        });
-      })
-      .catch(error => console.error('Error fetching CSV:', error));
-  });
+        }
+      });
+    })
+    .catch(error => console.error('Error fetching CSV:', error));
+});
+
   
   
