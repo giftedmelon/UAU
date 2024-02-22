@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -44.0 50.0 50.0">
+    <g transform="scale(1, -1)">
+        <!-- ボディの枠 -->
+        <rect x="0" y="-6.0" width="50.0" height="50.0"
+            stroke="white" fill="white"/>
+        <!-- グリフ座標系の原点 -->
+        <circle cx="0" cy="0" r="5" fill="white"/>
+        <!-- グリフのアウトライン -->
+        <g style="fill:black;stroke:#000000;stroke-width:0.000001;stroke-linecap:round;stroke-linejoin:round;">
+        <path d="M 22.9 32.2 L 22.9 5.3 L 3.9 5.3 C 2.9 5.3 2.3 4.5 2.3 3.6 C 2.3 2.8 2.9 1.9 3.9 1.9 L 46.2 1.9 C 47.3 1.9 47.8 2.8 47.8 3.6 C 47.8 4.5 47.3 5.3 46.2 5.3 L 26.8 5.3 L 26.8 32.2 L 43.0 32.2 C 44.1 32.2 44.6 33.1 44.6 33.9 C 44.6 34.8 44.1 35.6 43.0 35.6 L 7.1 35.6 C 6.0 35.6 5.5 34.8 5.5 33.9 C 5.5 33.1 6.0 32.2 7.1 32.2 Z"/>
+    </g>
+    </g>
+</svg>
