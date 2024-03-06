@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device, initial-scale= 1.0">
+    <title>UAU</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="scriptf.js"></script>
+</head>
+<body>
+
+    <div class="floating-container">
+        <div class="floating-button" id="mainBtn">+</div>
+        <div class="element-container">
+            <span class="float-element" id="fabBtn"><i class="material-icons">phone</i>
+            </span>
+            <a href="index_jp.html" class="float-element"><i class="material-icons">email</i></a>
+            <span class="float-element"><i class="material-icons">chat</i>
+            </span>
+        </div>
+    </div>
+
+    <div id="floating-window">
+        <button id="comment-button">Comment</button>
+        <button id="highlight-button">Highlight</button>
+    </div>
+    
+    <div id="comment-modal" class="modal">
+        <div class="modal-content">
+          <span onclick="closeCommentModal()" style="cursor: pointer; float: right;">&times;</span>
+          <p>Select options:</p>
+          <label><input type="checkbox" id="option1" name="option1"> Option 1</label>
+          <label><input type="checkbox" id="option2" name="option2"> Option 2</label>
+          <label><input type="checkbox" id="option3" name="option3"> Option 3</label>
+          <form id="comment-form">
+            <label for="comment">Your Comment:</label>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+            <input type="button" value="Submit Comment" onclick="submitForm()">
+        </form>
+        </div>
+    </div>
+
+    <div class="fab-content" id="fabContent">
+        <p>This is the content displayed when the button is clicked.</p>
+        <!-- Add more content as needed -->
+    </div>
+
+    <div class="toggle-switch" id="toggleSwitch" onclick="toggleContent()">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <span id="modeText">Edit Mode</span>
+    </div>
+    <div class="lang-switch sp-none">
+        <a href="index.html">English</a>
+        <a href="index_jp.html">日本語</a>
+    </div>  
+        <header>
+        <h1><span id="myName">UAU site</span></h1>
+        <a href="https://github.com/giftedmelon/UAU" target="_blank">
+            <img src="ibu32.png">
+        </a>
+        <a href="https://www.total.titech.ac.jp/2023-10-2023pbc-orientation/" target="_blank">Visit PBC.com</a>
+        </header>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="pikachu1.png" style="width:50%">
+            </div>
+            <div class="mySlides fade">
+                <img src="pikachu2.png" style="width:50%">
+            </div>
+            <div class="mySlides fade">
+                <img src="pikachu3.png" style="width:50%">
+            </div>
+            <div class="mySlides fade">
+                <img src="pikachu4.png" style="width:50%">
+            </div>
+            <div class="mySlides fade">
+                <img src="pikachu5.png" style="width:50%">
+            </div>
+            <div class="mySlides fade">
+                <img src="pikachu6.png" style="width:50%">
+            </div>
+            <div class="mySlides fade">
+                <img src="pikachu7.png" style="width:50%">
+            </div>
+        </div> 
+        <!--<img src="uau.pdf" alt="UAU Photo"> -->
+        <p>Our team called <strong>UAU</strong> (usable accessibility usability).</p>
+        <p>We aim to bring more accessible functions into current web design</p>
+        <p>
+            For example:
+        </p>
+
+        <ul>
+            <li>User-centred touch design</li>
+            <li>Friendly Japanese</li>
+            <li>Zoom Mirror</li>
+        
+        <p>are on the way...</p>
+
+
+        <!--<div class="comment-form">
+            <h2>Leave a Comment</h2>
+            <form id="commentForm">
+              <label for="comment">Your Comment:</label>
+              <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+          
+              <input type="button" value="Submit Comment" onclick="submitForm()">
+            </form>
+          </div> -->
+
+        <footer>&copy; PBC 2023</footer>
+</body>
+</html>
+
+
