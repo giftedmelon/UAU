@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
       const svgContent = await response.text();
 
       svgObject.type = 'image/svg+xml';
-      svgObject.width = 200; // Set the width as needed
-      svgObject.height = 200; // Set the height as needed
+      svgObject.width = 100; // Set the width as needed
+      svgObject.height = 100; // Set the height as needed
       svgObject.style.marginRight = '10px'; // Set the right margin to 10 pixels
       svgObject.data = `data:image/svg+xml,${encodeURIComponent(svgContent)}`;
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Replace 'svg50.csv' with the path to your CSV file
-  const csvFilePath = 'test/testing_data/test_fold_2.csv';
+  const csvFilePath = 'test/testing_data/test_fold_1.csv';
 
   // Fetch the CSV file
   fetch(csvFilePath)
@@ -35,9 +35,13 @@ document.addEventListener('DOMContentLoaded', function () {
         complete: async function (result) {
           for (const row of result.data) {
             const svgFileNames = [
+              { folder: 'test/outline_50_v2', fileName: row['File Name'] },
+              { folder: 'test/outline_50_v0', fileName: row['File Name'] },
               { folder: 'test/outline_50', fileName: row['File Name'] },
+              { folder: 'test/skeleton_50_v2', fileName: row['File Name'] },
+              { folder: 'test/skeleton_50_v0', fileName: row['File Name'] },
               { folder: 'test/skeleton_50', fileName: row['File Name'] },
-              { folder: 'test/test_result_2', fileName: row['File Name'] }
+              { folder: 'test/test_result_1', fileName: row['File Name'] }
             ];
 
             await addSVGRowToContainer(svgFileNames);

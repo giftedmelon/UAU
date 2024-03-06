@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf8'?>
+<svg viewBox="0.0 -6.0 50.0 50.0" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<rect x="-1000" y="-1000" width="2000" height="2000" stroke="white" fill="white"/>
+<g style="fill:white;stroke:#000000;  stroke-width:1">
+<path d="M 28 2 C 34 -4 38 -13 38 -26 L 38 -26 M 5 1 C 7 -1 10 -3 11 -6 M 25 -2 C 24 -3 22 -5 21 -6 M 31 -11 L 2 -11 M 10 -20 L 6 -20 M 6 -11 L 6 -36 M 14 -12 L 14 -22 M 10 -29 L 6 -29 M 20 -11 L 20 -26 C 20 -28 19 -28 17 -28 L 16 -28 C 15 -28 14 -29 14 -30 L 14 -40 M 28 -20 L 23 -20 M 6 -35 C 7 -36 8 -37 10 -38 M 27 -11 L 28 -34 C 28 -36 27 -37 25 -37 L 23 -37 M 28 -28 L 23 -28 M 47 1 C 42 -5 39 -14 38 -23 M 20 -35 L 15 -35 M 32 -24 C 34 -28 36 -35 37 -40 M 44 -25 C 45 -26 46 -27 46 -29 C 47 -30 46 -31 44 -31 L 34 -31" transform="translate(0.0 38.0)" />
+</g>
+</svg>

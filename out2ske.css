@@ -4,12 +4,69 @@ body {
   }
 
 header {
-    background-color: #333;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 2 1 1 1;
+    width: 100%;
     color: #fff;
+    background-color: #333;
+    display: flex;
+    align-items: center;
     padding: 10px;
     position: relative;
     z-index: 1; /* Set the z-index to ensure the header is above the body */
+}
+
+.menu{
+  width: 80%;
+  height: auto;
+    display: flex;
+  flex:auto;
   }
+
+  nav {
+    margin: 0 0 0 auto;
+  }
+  
+  nav ul li{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    list-style: none;
+    display: inline-block;
+    padding: 13px 35px;
+    margin: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #777;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+    }
+  
+  nav ul li::after{
+    content:'';
+    background: #777;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position:absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    }
+  
+  
+  nav ul li:hover::after{
+    top: 50%;
+    opacity: 1;
+    }
+  
+  
+  .menu nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    }
 
 main {
     padding: 20px;
