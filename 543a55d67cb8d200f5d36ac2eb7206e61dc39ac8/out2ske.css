@@ -5,23 +5,35 @@ body {
 
 header {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 2 1 1 1;
+    padding: 1 1 1 1 1;
     width: 100%;
     color: #fff;
     background-color: #333;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    /*align-items: center;*/
     padding: 10px;
     position: relative;
     z-index: 1; /* Set the z-index to ensure the header is above the body */
 }
 
+h1 {
+  order: 0;
+}
+
 .menu{
   width: 80%;
   height: auto;
-    display: flex;
+  display: flex;
   flex:auto;
+  order: 1;
   }
+
+h2 {
+   font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 12px;
+   order: 2;
+}
 
   nav {
     margin: 0 0 0 auto;
