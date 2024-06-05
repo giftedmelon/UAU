@@ -42,7 +42,9 @@ document.addEventListener('DOMContentLoaded', function () {
               { folder: 'test/skeleton_50_v0', fileName: row['File Name'] },
               { folder: 'test/skeleton_50', fileName: row['File Name'] },
               { folder: 'test/test_result_3', fileName: row['File Name'] },
-              { folder: 'test/overlap_50_skeleton/test_3', fileName: row['File Name'] }
+              { folder: 'test/overlap_50_skeleton/test_3', fileName: row['File Name'] },
+              { folder: 'stroke_animation/ground_3', fileName: row['File Name'] },
+              { folder: 'stroke_animation/test_3', fileName: row['File Name'] }
             ];
 
             await addSVGRowToContainer(svgFileNames);
