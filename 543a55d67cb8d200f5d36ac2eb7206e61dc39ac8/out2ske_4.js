@@ -44,7 +44,8 @@ document.addEventListener('DOMContentLoaded', function () {
               { folder: 'test/test_result_4', fileName: row['File Name'] },
               { folder: 'test/overlap_50_skeleton/test_4', fileName: row['File Name'] },
               { folder: 'stroke_animation/ground_4', fileName: row['File Name'] },
-              { folder: 'stroke_animation/test_4', fileName: row['File Name'] }
+              { folder: 'stroke_animation/test_4', fileName: row['File Name'] },
+              { folder: 'stroke_animation/outline_4', fileName: row['File Name'] }
             ];
 
             await addSVGRowToContainer(svgFileNames);
