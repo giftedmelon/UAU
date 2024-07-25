@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg viewBox="0.0 -44.0 50.0 50.0" version="1.1">
+<rect x="-1000" y="-1000" width="2000" height="2000" stroke="white" fill="white" />
+<g style="fill:white;stroke:#000000;  stroke-width:1">
+<path d="M 3.5 13.4 C 7.5 14.6 11.3 15.9 14.4 17.5 M 4.3 -1.6 C 5.2 -1.8 6.0 -1.9 6.5 -1.9 C 8.6 -1.9 9.6 -1.0 9.6 1.4 L 9.6 40.4 M 14.4 29.3 L 3.8 29.3 M 23.6 8.8 L 23.6 27.6 M 21.4 35.8 C 28.1 36.2 35.5 37.4 41.3 38.9 M 45.6 -0.2 L 17.6 -0.2 M 31.8 -0.5 L 31.8 36.6 M 44.9 9.0 L 19.2 9.0 M 44.8 28.1 L 19.4 28.1 M 46.8 18.8 L 18.2 18.8 M 40.4 8.8 L 40.4 27.6" transform="scale(1, -1)" />
+</g>
+<g style="fill:none; stroke:none; stroke-width:0"><text x="3.5" y="-13.4" fill="red" font-size="4">1</text><text x="4.3" y="1.6" fill="red" font-size="4">2</text><text x="14.4" y="-29.3" fill="red" font-size="4">3</text><text x="23.6" y="-8.8" fill="red" font-size="4">4</text><text x="21.4" y="-35.8" fill="red" font-size="4">5</text><text x="45.6" y="0.2" fill="red" font-size="4">6</text><text x="31.8" y="0.5" fill="red" font-size="4">7</text><text x="44.9" y="-9.0" fill="red" font-size="4">8</text><text x="44.8" y="-28.1" fill="red" font-size="4">9</text><text x="46.8" y="-18.8" fill="red" font-size="4">10</text><text x="40.4" y="-8.8" fill="red" font-size="4">11</text></g></svg>

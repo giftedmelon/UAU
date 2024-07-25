@@ -1,0 +1,53 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const svgContainer = document.getElementById('svgContainer');
+
+  async function addPNGRowToContainer(pngFileNames) {
+    const pngRow = document.createElement('div');
+    pngRow.classList.add('png-row');
+
+    for (const { folder, fileName } of pngFileNames) {
+      const imgElement = document.createElement('img');
+      const response = await fetch(`${folder}/${fileName}`);
+      const blob = await response.blob();
+      const objectURL = URL.createObjectURL(blob);
+
+      imgElement.src = objectURL;
+      imgElement.width = 100; // Set the width as needed
+      imgElement.height = 100; // Set the height as needed
+      imgElement.style.marginRight = '10px'; // Set the right margin to 10 pixels
+
+      pngRow.appendChild(imgElement);
+    }
+
+    svgContainer.appendChild(pngRow);
+  }
+
+  // Replace 'svg50.csv' with the path to your CSV file
+  const csvFilePath = 'order/test_2.csv';
+
+  // Fetch the CSV file
+  fetch(csvFilePath)
+    .then(response => response.text())
+    .then(csvData => {
+      // Parse the CSV data using PapaParse
+      Papa.parse(csvData, {
+        header: true, // Assumes the first row contains headers
+        complete: async function (result) {
+          for (const row of result.data) {
+            const pngFileNames = [
+              { folder: 'order/l2r_out_png', fileName: row['File Name'] },
+              { folder: 'order/l2r_gt_png', fileName: row['File Name'] },
+              { folder: 'order/l2r_png', fileName: row['File Name'] }
+            ];
+
+            await addPNGRowToContainer(pngFileNames);
+          }
+        }
+      });
+    })
+    .catch(error => console.error('Error fetching CSV:', error));
+});
+
+
+  
+  
