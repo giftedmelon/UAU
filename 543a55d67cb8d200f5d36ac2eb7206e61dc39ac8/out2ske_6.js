@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Replace 'svg50.csv' with the path to your CSV file
-  const csvFilePath = 'order/test_2.csv';
+  const csvFilePath = 'order/test_2_kanjivg_sorted.csv';
 
   // Fetch the CSV file
   fetch(csvFilePath)
@@ -37,7 +37,9 @@ document.addEventListener('DOMContentLoaded', function () {
             const pngFileNames = [
               { folder: 'order/l2r_out_png', fileName: row['File Name'] },
               { folder: 'order/l2r_gt_png', fileName: row['File Name'] },
-              { folder: 'order/l2r_png', fileName: row['File Name'] }
+              { folder: 'order/l2r_png', fileName: row['File Name'] },
+              { folder: 'order/kanjivg_sorted_o_png', fileName: row['File Name'] },
+              { folder: 'order/kanjivg_sorted_s_png', fileName: row['File Name'] }
             ];
 
             await addPNGRowToContainer(pngFileNames);
