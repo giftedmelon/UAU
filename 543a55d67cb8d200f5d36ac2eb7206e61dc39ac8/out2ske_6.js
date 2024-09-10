@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Replace 'svg50.csv' with the path to your CSV file
-  const csvFilePath = 'order/test_2_kanjivg_sorted.csv';
+  const csvFilePath = 'order/test_2_predictions.csv';
 
   // Fetch the CSV file
   fetch(csvFilePath)
@@ -38,13 +38,16 @@ document.addEventListener('DOMContentLoaded', function () {
               //{ folder: 'order/l2r_out_png', fileName: row['File Name'] },
               //{ folder: 'order/l2r_gt_png', fileName: row['File Name'] },
               //{ folder: 'order/l2r_png', fileName: row['File Name'] },{ folder: 'order/kanjivg_png', fileName: row['File Name'] },
-              { folder: 'order/test2_o_order_png', fileName: row['File Name'] },
-              { folder: 'order/test2_s_order_png', fileName: row['File Name'] },
-              { folder: 'order/o_sorted_test2_o_ord_png', fileName: row['File Name'] },
-              { folder: 'order/o_sorted_test2_s_ord_png', fileName: row['File Name'] },
-              { folder: 'order/kanjivg_png', fileName: row['File Name'] },
-              { folder: 'order/kanjivg_sorted_o_png', fileName: row['File Name'] },
-              { folder: 'order/kanjivg_sorted_s_png', fileName: row['File Name'] }
+              // { folder: 'order/test2_o_order_png', fileName: row['File Name'] },
+              // { folder: 'order/test2_s_order_png', fileName: row['File Name'] },
+              // { folder: 'order/o_sorted_test2_o_ord_png', fileName: row['File Name'] },
+              // { folder: 'order/o_sorted_test2_s_ord_png', fileName: row['File Name'] },
+              // { folder: 'order/kanjivg_png', fileName: row['File Name'] },
+              // { folder: 'order/kanjivg_sorted_o_png', fileName: row['File Name'] },
+              // { folder: 'order/kanjivg_sorted_s_png', fileName: row['File Name'] }
+              { folder: 'order/shuffle_0_stop_png', fileName: row['filename'] },
+              { folder: 'order/shuffle_1_stop_png', fileName: row['filename'] },
+              { folder: 'order/shuffle_2_stop_png', fileName: row['filename'] }
             ];
 
             await addPNGRowToContainer(pngFileNames);
