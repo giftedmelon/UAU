@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg viewBox="0 -44.0 50.0 50.0">
+    <g transform="scale(1, -1)">
+        
+        <rect x="0" y="-6.0" width="50.0" height="50.0" stroke="white" fill="white" />
+        
+        <circle cx="0" cy="0" r="5" fill="white" />
+        
+        <g style="fill:none;stroke:#000000;stroke-width:1;">
+<path d="M 22.9 -1.7 C 22.9 -2.8 23.9 -3.2 24.9 -3.2 C 25.9 -3.2 26.8 -2.8 26.8 -1.7 L 26.8 39.7 C 26.8 40.7 25.9 41.2 24.9 41.2 C 23.9 41.2 22.9 40.7 22.9 39.7 Z" />
+</g>
+</g>
+<g style="fill:none; stroke:none; stroke-width:0"><text x="19.9" y="1.7" fill="red" font-size="4">1</text></g></svg>
