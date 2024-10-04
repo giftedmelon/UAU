@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Replace 'svg50.csv' with the path to your CSV file
-  const csvFilePath = 'order/test_2_predictions.csv';
+  const csvFilePath = 'colab/test_1_cd.csv';
 
   // Fetch the CSV file
   fetch(csvFilePath)
@@ -45,17 +45,12 @@ document.addEventListener('DOMContentLoaded', function () {
               // { folder: 'order/kanjivg_png', fileName: row['File Name'] },
               // { folder: 'order/kanjivg_sorted_o_png', fileName: row['File Name'] },
               // { folder: 'order/kanjivg_sorted_s_png', fileName: row['File Name'] }
-              { folder: 's_2_test_2/origin/1/origin_1_out_stop_png', fileName: row['filename'] },
-              { folder: 's_2_test_2/origin/1/origin_1_stop_png', fileName: row['filename'] },
-              { folder: 's_2_test_2/origin/2/origin_2_stop_png', fileName: row['filename'] },
-              { folder: 's_2_test_2/origin/3/origin_3_stop_png', fileName: row['filename'] },
-              { folder: 's_2_test_2/origin/4/origin_4_stop_png', fileName: row['filename'] },
-              { folder: 's_2_test_2/origin/5/origin_5_stop_png', fileName: row['filename'] },
-              { folder: 's_2_test_2/origin/6/origin_6_stop_png', fileName: row['filename'] },
-              { folder: 's_2_test_2/origin/7/origin_7_stop_png', fileName: row['filename'] },
-              { folder: 's_2_test_2/origin/8/origin_8_stop_png', fileName: row['filename'] },
-              { folder: 's_2_test_2/origin/9/origin_9_stop_png', fileName: row['filename'] },
-              { folder: 's_2_test_2/origin/10/origin_10_stop_png', fileName: row['filename'] }
+              { folder: 'colab/test_result/cd/llama/llama_out_stop_png', fileName: row['File Name'] },
+              { folder: 'colab/test_result/cd/llama/llama_stop_png', fileName: row['File Name'] },
+              { folder: 'colab/test_result/cd/mistral/mistral_out_stop_png', fileName: row['File Name'] },
+              { folder: 'colab/test_result/cd/mistral/mistral_stop_png', fileName: row['File Name'] },
+              { folder: 'colab/test_result/cd/phi/phi_out_stop_png', fileName: row['File Name'] },
+              { folder: 'colab/test_result/cd/phi/phi_stop_png', fileName: row['File Name'] }
             ];
 
             await addPNGRowToContainer(pngFileNames);
