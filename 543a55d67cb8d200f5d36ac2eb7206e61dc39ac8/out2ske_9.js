@@ -45,16 +45,16 @@ document.addEventListener('DOMContentLoaded', function () {
               // { folder: 'order/kanjivg_png', fileName: row['File Name'] },
               // { folder: 'order/kanjivg_sorted_o_png', fileName: row['File Name'] },
               // { folder: 'order/kanjivg_sorted_s_png', fileName: row['File Name'] }
-              { folder: 'colab/test_result/cd/llama/llama_out_stop_png', fileName: row['File Name'] },
-              { folder: 'colab/test_result/cd/llama/llama_stop_png', fileName: row['File Name'] },
-              { folder: 'colab/test_result/l2r_t2b/llama/llama_out_stop_png', fileName: row['File Name'] },
-              { folder: 'colab/test_result/l2r_t2b/llama/llama_stop_png', fileName: row['File Name'] },
-              { folder: 'colab/test_result/outline_base/llama/llama_out_stop_png', fileName: row['File Name'] },
-              { folder: 'colab/test_result/outline_base/llama/llama_stop_png', fileName: row['File Name'] },
-              { folder: 'colab/test_result/kanjivg_base_l2r_t2b/llama/llama_out_stop_png', fileName: row['File Name'] },
-              { folder: 'colab/test_result/kanjivg_base_l2r_t2b/llama/llama_stop_png', fileName: row['File Name'] },
-              { folder: 'colab/test_result/kanjivg_base/llama/llama_out_stop_png', fileName: row['File Name'] },
-              { folder: 'colab/test_result/kanjivg_base/llama/llama_stop_png', fileName: row['File Name'] },
+              { folder: 'colab/test_result/cd/mistral/mistral_out_stop_png', fileName: row['File Name'] },
+              { folder: 'colab/test_result/cd/mistral/mistral_stop_png', fileName: row['File Name'] },
+              { folder: 'colab/test_result/l2r_t2b/mistral/mistral_out_stop_png', fileName: row['File Name'] },
+              { folder: 'colab/test_result/l2r_t2b/mistral/mistral_stop_png', fileName: row['File Name'] },
+              { folder: 'colab/test_result/outline_base/mistral/mistral_out_stop_png', fileName: row['File Name'] },
+              { folder: 'colab/test_result/outline_base/mistral/mistral_stop_png', fileName: row['File Name'] },
+              { folder: 'colab/test_result/kanjivg_base_l2r_t2b/mistral/mistral_out_stop_png', fileName: row['File Name'] },
+              { folder: 'colab/test_result/kanjivg_base_l2r_t2b/mistral/mistral_stop_png', fileName: row['File Name'] },
+              { folder: 'colab/test_result/kanjivg_base/mistral/mistral_out_stop_png', fileName: row['File Name'] },
+              { folder: 'colab/test_result/kanjivg_base/mistral/mistral_stop_png', fileName: row['File Name'] },
             ];
 
             await addPNGRowToContainer(pngFileNames);

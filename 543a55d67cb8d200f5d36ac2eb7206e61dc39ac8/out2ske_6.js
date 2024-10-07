@@ -45,6 +45,8 @@ document.addEventListener('DOMContentLoaded', function () {
               // { folder: 'order/kanjivg_png', fileName: row['File Name'] },
               // { folder: 'order/kanjivg_sorted_o_png', fileName: row['File Name'] },
               // { folder: 'order/kanjivg_sorted_s_png', fileName: row['File Name'] }
+              { folder: 's_2_test_2/shuffle/1/shuffle_1_out_stop_png', fileName: row['filename'] },
+              { folder: 's_2_test_2/shuffle/1/shuffle_1_stop_png', fileName: row['filename'] },
               { folder: 's_2_test_2/origin/1/origin_1_out_stop_png', fileName: row['filename'] },
               { folder: 's_2_test_2/origin/1/origin_1_stop_png', fileName: row['filename'] },
               { folder: 's_2_test_2/origin/2/origin_2_stop_png', fileName: row['filename'] },
